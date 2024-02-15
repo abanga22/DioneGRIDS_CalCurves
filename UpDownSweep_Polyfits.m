@@ -63,104 +63,137 @@ D_sigma_dn = D_dn(:,4);
 
 % Collector A Upsweep
 figure(1);
-stem(A_med_up, input_currents_nA, 'LineWidth', 2);
+scatter(A_med_up, input_currents_nA, 'LineWidth', 2);
 set(gca, 'yscal', 'log', 'fontsize', 14);
 set(gca, 'xscal', 'log');
 hold on;
 xlim([min(A_med_up)-10 max(A_med_up)+10]);
+ylim([10e-10 10e4]);
 ylabel("Input Current (nA)");
 xlabel("Measured Median Current (nA)");
 title("Positive Valued IDM Current Medians, Collector A Upsweep");
 grid on;
+set(gca, 'XMinorGrid', 'on', 'YMinorGrid', 'on', ...
+         'GridColor', 'k', 'MinorGridAlpha', 0.5, 'MinorGridLineStyle', '-', ...
+         'MinorGridColor', [0.3,0.3,0.3], 'GridAlpha', 0.8, 'LineWidth', 1.2);
 
 % Collector A Downsweep
 figure(2);
-stem(A_med_dn, input_currents_nA, 'LineWidth', 2);
+scatter(A_med_dn, input_currents_nA, 'LineWidth', 2);
 set(gca, 'yscal', 'log', 'fontsize', 14);
 set(gca, 'xscal', 'log');
 hold on;
 xlim([min(A_med_dn)-10 max(A_med_dn)+10]);
+ylim([10e-10 10e4]);
 ylabel("Input Current (nA)");
 xlabel("Measured Median Current (nA)");
 title("Positive Valued IDM Current Medians, Collector A Downsweep");
 grid on;
+set(gca, 'XMinorGrid', 'on', 'YMinorGrid', 'on', ...
+         'GridColor', 'k', 'MinorGridAlpha', 0.5, 'MinorGridLineStyle', '-', ...
+         'MinorGridColor', [0.3,0.3,0.3], 'GridAlpha', 0.8, 'LineWidth', 1.2);
 
 % Collector B Upsweep
 figure(3);
-stem(B_med_up, input_currents_nA, 'LineWidth', 2);
+scatter(B_med_up, input_currents_nA, 'LineWidth', 2);
 set(gca, 'yscal', 'log', 'fontsize', 14);
 set(gca, 'xscal', 'log');
 hold on;
 xlim([min(B_med_up)-10 max(B_med_up)+10]);
+ylim([10e-10 10e4]);
 ylabel("Input Current (nA)");
 xlabel("Measured Median Current (nA)");
 title("Positive Valued IDM Current Medians, Collector B Upsweep");
 grid on;
+set(gca, 'XMinorGrid', 'on', 'YMinorGrid', 'on', ...
+         'GridColor', 'k', 'MinorGridAlpha', 0.5, 'MinorGridLineStyle', '-', ...
+         'MinorGridColor', [0.3,0.3,0.3], 'GridAlpha', 0.8, 'LineWidth', 1.2);
 
 % Collector B Downsweep
 figure(4);
-stem(B_med_dn, input_currents_nA, 'LineWidth', 2);
+scatter(B_med_dn, input_currents_nA, 'LineWidth', 2);
 set(gca, 'yscal', 'log', 'fontsize', 14);
 set(gca, 'xscal', 'log');
 hold on;
 xlim([min(B_med_dn)-10 max(B_med_dn)+10]);
+ylim([10e-10 10e4]);
 ylabel("Input Current (nA)");
 xlabel("Measured Median Current (nA)");
 title("Positive Valued IDM Current Medians, Collector B Downsweep");
 grid on;
+set(gca, 'XMinorGrid', 'on', 'YMinorGrid', 'on', ...
+         'GridColor', 'k', 'MinorGridAlpha', 0.5, 'MinorGridLineStyle', '-', ...
+         'MinorGridColor', [0.3,0.3,0.3], 'GridAlpha', 0.8, 'LineWidth', 1.2);
 
 % Collector C Upsweep
 figure(5);
-stem(C_med_up, input_currents_nA, 'LineWidth', 2);
+scatter(C_med_up, input_currents_nA, 'LineWidth', 2);
 set(gca, 'yscal', 'log', 'fontsize', 14);
 set(gca, 'xscal', 'log');
 hold on;
 xlim([min(C_med_up)-10 max(C_med_up)+10]);
+ylim([10e-10 10e4]);
 ylabel("Input Current (nA)");
 xlabel("Measured Median Current (nA)");
 title("Positive Valued IDM Current Medians, Collector C Upsweep");
 grid on;
+set(gca, 'XMinorGrid', 'on', 'YMinorGrid', 'on', ...
+         'GridColor', 'k', 'MinorGridAlpha', 0.5, 'MinorGridLineStyle', '-', ...
+         'MinorGridColor', [0.3,0.3,0.3], 'GridAlpha', 0.8, 'LineWidth', 1.2);
 
 % Collector C Downsweep
 figure(6);
-stem(C_med_dn, input_currents_nA, 'LineWidth', 2);
+scatter(C_med_dn, input_currents_nA, 'LineWidth', 2);
 set(gca, 'yscal', 'log', 'fontsize', 14);
 set(gca, 'xscal', 'log');
 hold on;
 xlim([min(C_med_dn)-10 max(C_med_dn)+10]);
+ylim([10e-10 10e4]);
 ylabel("Input Current (nA)");
 xlabel("Measured Median Current (nA)");
 title("Positive Valued IDM Current Medians, Collector C Downsweep");
 grid on;
+set(gca, 'XMinorGrid', 'on', 'YMinorGrid', 'on', ...
+         'GridColor', 'k', 'MinorGridAlpha', 0.5, 'MinorGridLineStyle', '-', ...
+         'MinorGridColor', [0.3,0.3,0.3], 'GridAlpha', 0.8, 'LineWidth', 1.2);
 
 % Collector D Upsweep
 figure(7);
-stem(D_med_up, input_currents_nA, 'LineWidth', 2);
+scatter(D_med_up, input_currents_nA, 'LineWidth', 2);
 set(gca, 'yscal', 'log', 'fontsize', 14);
 set(gca, 'xscal', 'log');
 hold on;
 xlim([min(D_med_up)-10 max(D_med_up)+10]);
+ylim([10e-10 10e4]);
 ylabel("Input Current (nA)");
 xlabel("Measured Median Current (nA)");
 title("Positive Valued IDM Current Medians, Collector D Upsweep");
 grid on;
+set(gca, 'XMinorGrid', 'on', 'YMinorGrid', 'on', ...
+         'GridColor', 'k', 'MinorGridAlpha', 0.5, 'MinorGridLineStyle', '-', ...
+         'MinorGridColor', [0.3,0.3,0.3], 'GridAlpha', 0.8, 'LineWidth', 1.2);
 
 % Collector D Downsweep
 figure(8);
-stem(D_med_dn, input_currents_nA, 'LineWidth', 2);
+scatter(D_med_dn, input_currents_nA, 'LineWidth', 2);
 set(gca, 'yscal', 'log', 'fontsize', 14);
 set(gca, 'xscal', 'log');
 hold on;
 xlim([min(D_med_dn)-10 max(D_med_dn)+10]);
+ylim([10e-10 10e4]);
 ylabel("Input Current (nA)");
 xlabel("Measured Median Current (nA)");
 title("Positive Valued IDM Current Medians, Collector D Downsweep");
 grid on;
+set(gca, 'XMinorGrid', 'on', 'YMinorGrid', 'on', ...
+         'GridColor', 'k', 'MinorGridAlpha', 0.5, 'MinorGridLineStyle', '-', ...
+         'MinorGridColor', [0.3,0.3,0.3], 'GridAlpha', 0.8, 'LineWidth', 1.2);
 
 % Collector D Upsweep (0.2 nA omission)
 figure(9);
-stem(D_med_up_omit, input_currents_omit200pA, 'LineWidth', 2);
+scatter(D_med_up_omit, input_currents_omit200pA, 'LineWidth', 2);
 xlim([min(D_med_up)-10 max(D_med_up)+10]);
+ylim([10e-10 10e4]);
 set(gca, 'yscal', 'log', 'fontsize', 14);
 set(gca, 'xscal', 'log');
 hold on;
@@ -168,11 +201,15 @@ title("Positive Valued IDM Current Medians, D Upsweep (0.2 nA omission)");
 ylabel("Input Current (nA)");
 xlabel("Measured Median Current (nA)");
 grid on;
+set(gca, 'XMinorGrid', 'on', 'YMinorGrid', 'on', ...
+         'GridColor', 'k', 'MinorGridAlpha', 0.5, 'MinorGridLineStyle', '-', ...
+         'MinorGridColor', [0.3,0.3,0.3], 'GridAlpha', 0.8, 'LineWidth', 1.2);
 
 % Collector D Downsweep (0.2 nA omission)
 figure(10);
-stem(D_med_dn_omit, input_currents_omit200pA, 'LineWidth', 2);
+scatter(D_med_dn_omit, input_currents_omit200pA, 'LineWidth', 2);
 xlim([min(D_med_dn)-10 max(D_med_dn)+10]);
+ylim([10e-10 10e4]);
 set(gca, 'yscal', 'log', 'fontsize', 14);
 set(gca, 'xscal', 'log');
 hold on;
@@ -180,6 +217,9 @@ title("Positive Valued IDM Current Medians, D Downsweep (0.2 nA omission)");
 ylabel("Input Current (nA)");
 xlabel("Measured Median Current (nA)");
 grid on;
+set(gca, 'XMinorGrid', 'on', 'YMinorGrid', 'on', ...
+         'GridColor', 'k', 'MinorGridAlpha', 0.5, 'MinorGridLineStyle', '-', ...
+         'MinorGridColor', [0.3,0.3,0.3], 'GridAlpha', 0.8, 'LineWidth', 1.2);
 
 %% Get polynomial fits
 
